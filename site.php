@@ -8,11 +8,20 @@
 <body>
 
 <?php 
-   $phrase = "To be or not to be";
-   $age = 21;
-   $gpa = 21.1;
-   $isMale = true;
-?>
+   $phrase = "Leart Musahu";
+   echo str_replace("Leart", "Art", $phrase);
+   echo "<br>";
+   
+   $num = 10;
+   $num+= 25;
+   echo $num;
+   
+   echo "<br>";
+   echo pow(2,4);
+   echo "<br>";
+   echo max(2, 100);
+   
+   ?>
     
 </body>
 </html>
