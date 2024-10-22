@@ -6,22 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-
-<?php 
-   $phrase = "Leart Musahu";
-   echo str_replace("Leart", "Art", $phrase);
-   echo "<br>";
    
-   $num = 10;
-   $num+= 25;
-   echo $num;
-   
-   echo "<br>";
-   echo pow(2,4);
-   echo "<br>";
-   echo max(2, 100);
-   
-   ?>
-    
+   <form action="site.php" method="GET">
+    <input type="number" name="num1">
+    <br>
+    <input type="number" name="num2">
+    <input type="submit">
+    <br>
+   </form>
+   Answer:
+<?php echo $_GET["num1"] + $_GET["num2"] ?>
 </body>
 </html>
