@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="POST">
-        <input type="text" name="student">
-        <input type="submit">
-    </form>
+    
 
     <?php 
-        $grades = ["Jim"=>"A+", "Pam"=>"B-","John"=>"C+"];
-        echo $grades[$_POST["student"]];
+        function sayHi($name, $age){
+            echo "Hello $name, you are $age";
+        }
+
+        sayHi("Leart",21);
     ?>
+    
 
 </body>
 </html>
