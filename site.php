@@ -8,23 +8,28 @@
 <body>
     
     <?php 
-        class Book {
-            var $title;
-            var $author;
-            var $pages;
+        class Chef {
 
+            function makeChicken() {
+                echo "The chef makes chicken.\n";
+            }
 
-            function __construct($aTitle, $aAuthor, $aPages) {
-                $this->title = $aTitle;
-                $this->author = $aAuthor;
-                $this->pages = $aPages;
+            function makeBeef() {
+                echo "The chef makes beef.\n";
+            }
+        }
+        class ItalianChef extends Chef {
+            function makePasta() {
+                echo "The chef makes pasta.\n";
             }
         }
 
        
 
-        $book1 = new Book("Harry Potter", "JK Rowling", 400);
-        $book2 = new Book("Harryyy  Potter", "JK Rowling", 400);
+        $chef = new Chef();
+        $chef-> makeChicken();
+        $italianChef = new ItalianChef();
+        $italianChef-> makeChicken();
         
     ?>
 
