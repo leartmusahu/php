@@ -7,15 +7,26 @@
 </head>
 <body>
     
-
     <?php 
-        function sayHi($name, $age){
-            echo "Hello $name, you are $age";
+        class Book {
+            var $title;
+            var $author;
+            var $pages;
+
+
+            function __construct($aTitle, $aAuthor, $aPages) {
+                $this->title = $aTitle;
+                $this->author = $aAuthor;
+                $this->pages = $aPages;
+            }
         }
 
-        sayHi("Leart",21);
+       
+
+        $book1 = new Book("Harry Potter", "JK Rowling", 400);
+        $book2 = new Book("Harryyy  Potter", "JK Rowling", 400);
+        
     ?>
-    
 
 </body>
 </html>
